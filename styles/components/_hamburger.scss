@@ -1,0 +1,49 @@
+$width: 5rem;
+$height: 3rem;
+
+nav button {
+  border: none;
+  background-color: transparent;
+  width: $width;
+  height: $height;
+  position: relative;
+}
+
+.hamburger {
+  width: $width;
+  height: $height;
+  position: relative;
+}
+
+.hamburger span {
+  width: $width;
+  height: 0.5rem;
+  background-color: black;
+  position: absolute;
+  transition: 0.25s ease-out;
+}
+
+.hamburger span:first-of-type {
+  top: 0;
+}
+
+.hamburger:hover span:first-of-type {
+  top: -0.25rem;
+}
+
+.hamburger span:nth-of-type(2) {
+  top: calc(50% - 0.25rem);
+}
+
+.hamburger span:nth-of-type(3) {
+  top: calc(93% - 0.25rem);
+}
+
+.hamburger:hover span:nth-of-type(3) {
+  top: calc(100% - 0.25rem);
+}
+
+.hamburger.active span:nth-of-type(3),
+.hamburger.active span:first-of-type {
+  top: calc(50% - 0.25rem);
+}
