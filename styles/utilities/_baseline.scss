@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+li,
+a {
+  font-family: 'IBM Plex Mono', Courier, monospace;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  color: $black;
+
+  &::after {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $black;
+    content: '';
+    transition: 0.5s ease-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.sr-only {
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

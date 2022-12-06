@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 5rem;
+  margin-top: 3rem;
+  background-color: $black;
+
+  a {
+    color: $white;
+
+    &::after {
+      background-color: $white;
+    }
+  }
+}
