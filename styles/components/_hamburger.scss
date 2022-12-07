@@ -2,25 +2,26 @@ $width: 2.5rem;
 $height: 1.8rem;
 
 nav button {
+  position: relative;
+  z-index: 100;
   border: none;
   background-color: transparent;
   width: $width;
   height: $height;
-  position: relative;
 }
 
 .hamburger {
+  position: relative;
   width: $width;
   height: $height;
-  position: relative;
 
   span {
+    position: absolute;
+    left: 0;
+    transition: $transition-faster;
+    background-color: black;
     width: $width;
     height: 0.15rem;
-    background-color: black;
-    position: absolute;
-    transition: 0.25s ease-out;
-    left: 0;
 
     &:first-of-type {
       top: 0;

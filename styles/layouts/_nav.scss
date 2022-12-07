@@ -1,19 +1,25 @@
 nav {
-  height: 4.75rem;
   border-bottom: 1px solid $black;
+  height: 4.75rem;
 
   ul {
     display: flex;
-    list-style: none;
     justify-content: space-between;
+    border-bottom: 1px solid $black;
     background-color: $white;
     height: 4.5rem;
-    border-bottom: 1px solid $black;
+    list-style: none;
+  }
+
+  .logo {
+    a::after {
+      display: none;
+    }
   }
 
   img {
-    height: 3.5rem;
     padding: 0.5rem 0 0.5rem 1.5rem;
+    height: 3.5rem;
   }
 
   .nav-button {
@@ -21,15 +27,26 @@ nav {
   }
 
   .nav-items {
+    display: flex;
     position: absolute;
+    top: -100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    z-index: 50;
+    transition: $transition-base;
+    background-color: $black;
     width: 100vw;
     height: 100vh;
-    top: -100vh;
-    background-color: $black;
-    transition: 0.5s ease-out;
+    font-size: 1.5rem;
 
     a {
       color: $white;
+
+      &::after {
+        background-color: $white;
+      }
     }
   }
 
@@ -40,22 +57,24 @@ nav {
   }
 }
 
-@media (min-width: $xs) {
+@media (min-width: $sm) {
   nav {
     ul {
       padding: 0 1rem;
     }
 
     .nav-items {
-      height: auto;
-      width: auto;
-      position: static;
-      background-color: transparent;
       display: flex;
+      position: static;
       flex-grow: 1;
+      flex-direction: row;
       justify-content: space-around;
-      transition: none;
       align-items: center;
+      transition: none;
+      background-color: transparent;
+      width: auto;
+      height: auto;
+      font-size: 1rem;
 
       a {
         color: $black;

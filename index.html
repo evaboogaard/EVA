@@ -14,7 +14,7 @@
   </head>
 
   <body class="home">
-    <header>
+    <header id="header">
       <h1 class="sr-only">'not adam' development</h1>
       <nav>
         <ul>
@@ -22,9 +22,9 @@
             <a href="#"><img src="images/logo.png" alt="" /></a>
           </li>
           <section class="nav-items">
-            <li><a href="#">Home</a></li>
-            <li><a href="pages/about.html"> About</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="pages/about.html">about</a></li>
+            <li><a href="pages/contact.html">contact</a></li>
           </section>
           <li class="nav-button">
             <button class="hamburgerbutton">
@@ -40,12 +40,97 @@
     </header>
 
     <main>
-      <section>
-        <h2>Hi, I'm Eva (not Adam).</h2>
-        <p>I'm a visual designer, ux/ui designer and front-end developer.</p>
+      <article class="intro container">
+        <h2>hi, I'm eva (not adam).</h2>
+        <p>i'm a visual designer, ux/ui designer and front-end developer.</p>
+      </article>
+
+      <section class="projects">
+        <h2 class="container">projects</h2>
+        <a href="pages/destaat.html">
+          <section class="destaat observe">
+            <article>
+              <h3>de staat</h3>
+              <p>
+                redesign of the website by 'DE STAAT' using HTML, CSS and JS.
+                adding accessibility, changing layouts.
+              </p>
+              <p>role: front-end developer, visual designer</p>
+            </article>
+            <div class="work-img"></div>
+          </section>
+        </a>
+
+        <a href="pages/tarantino.html">
+          <section class="tarantino observe">
+            <article>
+              <h3>tarantino</h3>
+              <p>
+                dressup game with outfits, backgrounds and accessories from
+                quentin tarantino movies using HTML, CSS and JS.
+              </p>
+              <p>role: front-end developer, visual designer</p>
+            </article>
+            <div class="work-img"></div>
+          </section>
+        </a>
+
+        <a href="pages/dinder.html">
+          <section class="dinder observe">
+            <article>
+              <h3>dinder</h3>
+              <p>
+                matching application for restaurants in amsterdam. created with
+                node.js, handlebars templating, sass and mongodb.
+              </p>
+              <p>role: front-end developer, visual designer, ux/ui designer</p>
+            </article>
+            <div class="work-img"></div>
+          </section>
+        </a>
+
+        <a href="pages/plogdedag.html">
+          <section class="plogdedag observe">
+            <article>
+              <h3>plog de dag</h3>
+              <p>
+                fictional campaign by gemeente rotterdam, resulting in a
+                one-page responsive website design.
+              </p>
+              <p>role: visual designer, ux/ui designer</p>
+            </article>
+            <div class="work-img"></div>
+          </section>
+        </a>
+
+        <a href="pages/covidboardgame.html">
+          <section class="covid observe">
+            <article>
+              <h3>covid-19 board game</h3>
+              <p>
+                a boardgame designed by eva boogaard and danique lammertink
+                about the covid-19 pandemic in the netherlands.
+              </p>
+              <p>role: visual designer, game designer</p>
+            </article>
+            <div class="work-img"></div>
+          </section>
+        </a>
+
+        <a href="pages/playground.html">
+          <section class="playground observe">
+            <article>
+              <h3>'playing with css'</h3>
+              <p>an artwork purely created with css elements.</p>
+              <p>role: visual designer</p>
+            </article>
+            <div class="work-img"></div>
+          </section>
+        </a>
       </section>
 
-      <div id="circle"></div>
+      <div class="cursor-dot-outline"></div>
+      <div class="cursor-dot"></div>
     </main>
 
     <!-- <main>
@@ -113,12 +198,16 @@
  -->
 
     <footer>
-      <a
-        href="https://www.linkedin.com/in/eva-boogaard-219791174/"
-        target="_blank"
-        >Linkedin</a
-      >
-      <a href="https://github.com/evaboogaard" target="_blank">Github</a>
+      <section class="footer-links">
+        <a
+          href="https://www.linkedin.com/in/eva-boogaard-219791174/"
+          target="_blank"
+          >Linkedin</a
+        >
+        <a href="https://github.com/evaboogaard" target="_blank">Github</a>
+      </section>
+
+      <a class="back-to-top" href="#header">back to top</a>
     </footer>
 
     <script type="module" src="scripts/main.js"></script>
