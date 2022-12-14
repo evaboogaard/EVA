@@ -4,63 +4,162 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Playground</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>CSS Playground</title>
   </head>
 
   <body>
+    <header id="header">
+      <h1 class="sr-only">'not adam' development</h1>
+      <nav>
+        <ul>
+          <li class="logo">
+            <a href="../index.html"><img src="../images/logo.png" alt="" /></a>
+          </li>
+          <section class="nav-items">
+            <li><a href="#">home</a></li>
+            <li><a href="pages/about.html">about</a></li>
+            <li><a href="pages/contact.html">contact</a></li>
+          </section>
+          <li class="nav-button">
+            <button class="hamburgerbutton">
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="banner">
+        <section class="banner-content">
+          <h2>CSS playground</h2>
+          <h3>artwork solely created with CSS.</h3>
+          <a
+            class="btn light"
+            href="https://evaboogaard.github.io/CSSCursus/"
+            target="_blank"
+            >visit website</a
+          >
+        </section>
+      </section>
+    </header>
     <main>
-      <section>
-        <h1>"Playing with CSS"</h1>
-        <p>Artwork solely created with CSS.</p>
-        <img src="../images/playground/mockup1.png" alt="" />
+      <section class="project-metadata container">
+        <div class="whitespace-sm"></div>
 
-        <p>ROLE</p>
-        <p>VISUAL, FRONT-END</p>
+        <section>
+          <p class="label">ROLE</p>
+          <p class="content">
+            FRONT-END DEVELOPER, <br />
+            VISUAL DESIGNER
+          </p>
+        </section>
 
-        <p>CONTEXT</p>
-        <p>CSS CREATIVITY COURSE</p>
+        <section>
+          <p class="label">CONTEXT</p>
+          <p class="content">SCHOOL PROJECT</p>
+        </section>
 
-        <p>PERIOD</p>
-        <p>2020</p>
+        <section>
+          <p class="label">PERIOD</p>
+          <p class="content">2020</p>
+        </section>
+
+        <img
+          class="mockup1 playground"
+          src="../images/playground/mockup1.png"
+          alt=""
+        />
       </section>
 
-      <section>
-        <h2>Introduction</h2>
+      <section class="container intro-section">
+        <div class="whitespace-sm"></div>
+
+        <h2>INTRODUCTION</h2>
         <p>
-          As someone who loves CSS but doesn't have much experience yet, this
-          course was perfect. Picking a character or an artwork and trying to
-          recreate this solely by using CSS teaches you a lot about how to use
-          the medium in a completely different way.
+          for this school assignment the intent was to learn more about CSS and get creative with it. the goal of the assignment was to pick a character or an artwork and recreate it with only div's and CSS.
+        </p>
+      </section>
+
+      <div class="whitespace-md"></div>
+
+      <section class="container process-section">
+        <div class="whitespace-sm"></div>
+
+        <h2>PROCESS</h2>
+        <p>
+          starting this project off, i didn't have that much experience in CSS
+          yet. i started making a breakdown sketch of the character i wanted to
+          recreate: 'big hero 6' baymax. all of his different body parts were put into
+          different divs and spans in my HTML document.
+        </p>
+        <p>
+          after the HTML was written, I started styling
+          the different parts. I used a lot of different shadows,
+          border-radiuses and z-index values to create the character. this
+          challenge has taught me a lot about positioning, variables and the complexity of styling.
         </p>
 
-        <a href="https://github.com/evaboogaard/CSSCursus" target="_blank"
-          >Go to Respository</a
-        >
-      </section>
+        <div class="whitespace-sm"></div>
 
-      <section>
-        <div>
-          <h3>Process</h3>
-          <p>
-            Starting this project off, I didn't have that much experience in CSS
-            yet. I started making a breakdown sketch of the character I wanted
-            to recreate: Baymax. All of his different body parts were put into
-            different divs and spans in my HTML document.
-          </p>
-          <p>
-            After the HTML was tailored to (almost) perfection, I started
-            styling the different parts. I used a lot of different shadows,
-            border-radiuses and z-index values to create the character. This
-            challenge has taught me that CSS has an endless amount of
-            possibilities, most of which I don't even know half of.
-          </p>
-        </div>
-
-        <div>
+        <div class="process-pictures">
           <img src="../images/playground/process1.png" alt="" />
           <img src="../images/playground/process2.JPG" alt="" />
         </div>
+
+        <div class="whitespace-md"></div>
       </section>
+
+      <div class="whitespace-md"></div>
+
+      <section class="container result-section">
+        <h3>END RESULT</h3>
+        <p>
+          i created Baymax and a custom gradient-heavy background using CSS
+          only. I added in some animations to make him, the sun, moon and stars
+          move. using a JS toggle function that swaps the :root color variables you can also switch to dark mode.
+        </p>
+        <img src="../images/playground/final.gif" alt="" />
+
+        <a class="btn dark" href="https://evaboogaard.github.io/CSSCursus/" target="_blank"
+          >visit website</a
+        >
+      </section>
+
+        <div class="whitespace-sm"></div>
+      </section>
+
+      <div class="cursor-dot-outline"></div>
+      <div class="cursor-dot"></div>
+    </main>
+
+    <footer>
+      <section class="footer-links">
+        <a
+          href="https://www.linkedin.com/in/eva-boogaard-219791174/"
+          target="_blank"
+          >linkedin</a
+        >
+        <a href="https://github.com/evaboogaard" target="_blank">github</a>
+      </section>
+
+      <a class="back-to-top" href="#header">back to top</a>
+    </footer>
+
+    <script type="module" src="../scripts/main.js"></script>
+  </body>
+</html>
+<!-- 
+
+
 
       <section>
         <h3>End Result</h3>
@@ -79,4 +178,4 @@
 
     <script src="../scripts/main.js"></script>
   </body>
-</html>
+</html> -->

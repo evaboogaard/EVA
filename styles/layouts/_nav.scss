@@ -78,6 +78,10 @@ nav {
 
       a {
         color: $black;
+
+        &::after {
+          background-color: $black;
+        }
       }
     }
 

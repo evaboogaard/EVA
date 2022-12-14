@@ -4,76 +4,142 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tarantino Dressup Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tarantino Dress-up Game</title>
   </head>
 
   <body>
+    <header id="header">
+      <h1 class="sr-only">'not adam' development</h1>
+      <nav>
+        <ul>
+          <li class="logo">
+            <a href="../index.html"><img src="../images/logo.png" alt="" /></a>
+          </li>
+          <section class="nav-items">
+            <li><a href="#">home</a></li>
+            <li><a href="pages/about.html">about</a></li>
+            <li><a href="pages/contact.html">contact</a></li>
+          </section>
+          <li class="nav-button">
+            <button class="hamburgerbutton">
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="banner">
+        <section class="banner-content">
+          <h2>tarantino dress-up game</h2>
+          <h3>
+            a simple dress-up game created with HTML, CSS and JS where you can
+            create an outfit using items from famous quentin tarantino movies.
+          </h3>
+          <a
+            class="btn light"
+            href="https://evaboogaard.github.io/tarantino/"
+            target="_blank"
+            >visit website</a
+          >
+        </section>
+      </section>
+    </header>
     <main>
-      <section>
-        <h1>Tarantino Dress-up Game</h1>
-        <p>
-          Dive into the unique costumes from the iconic Quentin Tarantino
-          movies!
-        </p>
-        <img src="../images/tarantino/mockup1.png" alt="" />
+      <section class="project-metadata container">
+        <div class="whitespace-sm"></div>
 
-        <p>ROLE</p>
-        <p>FRONT-END, UX/UI, ILLUSTRATIONS</p>
+        <section>
+          <p class="label">ROLE</p>
+          <p class="content">
+            FRONT-END DEVELOPER, <br />
+            VISUAL DESIGNER
+          </p>
+        </section>
 
-        <p>CONTEXT</p>
-        <p>SCHOOL PROJECT</p>
+        <section>
+          <p class="label">CONTEXT</p>
+          <p class="content">SCHOOL PROJECT</p>
+        </section>
 
-        <p>PERIOD</p>
-        <p>2020</p>
+        <section>
+          <p class="label">PERIOD</p>
+          <p class="content">2020</p>
+        </section>
+
+        <img
+          class="mockup1 tarantino"
+          src="../images/tarantino/mockup1.png"
+          alt=""
+        />
       </section>
 
-      <section>
-        <h2>Introduction</h2>
+      <section class="container intro-section">
+        <div class="whitespace-sm"></div>
+
+        <h2>INTRODUCTION</h2>
         <p>
-          Dress-up Game coded with HTML, CSS and Javascript. All illustrations
+          dress-up game coded with HTML, CSS and javascript. all illustrations
           were originally made for this project and this was my first experience
-          with Javascript.
+          with javascript.
         </p>
-
-        <a href="https://github.com/evaboogaard/tarantino" target="_blank"
-          >Go to Respository</a
-        >
       </section>
 
-      <section>
-        <div>
-          <h3>Process</h3>
-          <p>
-            For this project there weren't any guidelines as to what kind of
-            product had to be made - as long as Javascript was used.
-          </p>
-          <p>
-            I decided to make a dress-up game with Tarantino characters. Pretty
-            quickly I had an idea for the layout and I stuck with it throughout
-            the project.
-          </p>
-          <p>
-            I had never worked with Javascript before so I struggled a lot with
-            the coding, but I learned a lot. Writing code is truly trial and
-            error - a single comma can break your entire website.
-          </p>
+      <div class="whitespace-md"></div>
 
-          <p>What I did for this project:</p>
-          <ul>
-            <li>drew all of the illustrations</li>
-            <li>used functions, parameters, if/else statements</li>
-            <li>coded the game with html, css and javascript</li>
-          </ul>
-        </div>
+      <section class="container process-section">
+        <div class="whitespace-sm"></div>
 
-        <div>
+        <h2>PROCESS</h2>
+        <p>
+          For this project there weren't any guidelines as to what kind of
+          product had to be made - as long as Javascript was used.
+        </p>
+        <p>
+          I decided to make a dress-up game with Tarantino characters. Pretty
+          quickly I had an idea for the layout and I stuck with it throughout
+          the project.
+        </p>
+        <p>
+          I had never worked with Javascript before so I struggled a lot with
+          the coding, but I learned a lot. Writing code is truly trial and error
+          - a single comma can break your entire website.
+        </p>
+
+        <div class="whitespace-sm"></div>
+
+        <div class="process-pictures">
           <img src="../images/tarantino/process1.png" alt="" />
           <img src="../images/tarantino/process2.png" alt="" />
         </div>
+
+        <div class="whitespace-sm"></div>
+
+        <p>FOR THIS PROJECT I:</p>
+        <ul>
+          <li>drew all of the illustrations</li>
+          <li>used functions, parameters, if/else statements</li>
+          <li>coded the game with html, css and javascript</li>
+        </ul>
+
+        <div class="whitespace-sm"></div>
       </section>
 
-      <section>
-        <h3>End Result</h3>
+      <div class="whitespace-md"></div>
+
+      <section class="container result-section">
+        <h2>END RESULT</h2>
+        <img src="../images/tarantino/final.gif" alt="" />
+
         <p>
           This Dress-up Game has multiple categories: skin, hair, top, bottom,
           shoes, accessories & backgrounds.
@@ -88,14 +154,34 @@
           combination is completely selected, the layout will change to
           red/yellow and the Kill Bill siren will be heard.
         </p>
-        <img src="../images/tarantino/final.gif" alt="" />
 
-        <a href="https://evaboogaard.github.io/tarantino/" target="_blank"
-          >Visit Website</a
+        <a
+          class="btn dark"
+          href="https://github.com/evaboogaard/tarantino"
+          target="_blank"
+          >visit repository</a
         >
+
+        <div class="whitespace-sm"></div>
       </section>
+
+      <div class="cursor-dot-outline"></div>
+      <div class="cursor-dot"></div>
     </main>
 
-    <script src="../scripts/main.js"></script>
+    <footer>
+      <section class="footer-links">
+        <a
+          href="https://www.linkedin.com/in/eva-boogaard-219791174/"
+          target="_blank"
+          >linkedin</a
+        >
+        <a href="https://github.com/evaboogaard" target="_blank">github</a>
+      </section>
+
+      <a class="back-to-top" href="#header">back to top</a>
+    </footer>
+
+    <script type="module" src="../scripts/main.js"></script>
   </body>
 </html>
