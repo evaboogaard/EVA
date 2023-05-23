@@ -11,8 +11,8 @@ pages:
   script:
     - npm install
     - npm run dev
-    # - cp -a dist/. public/
+    - cp -a portfolio/
   artifacts:
-    paths:
+    paths: portfolio/
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
