@@ -1,0 +1,52 @@
+.btn {
+  position: relative;
+  z-index: 5;
+  transition: $transition-base;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  width: fit-content;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -20rem;
+    z-index: -1;
+    transition: $transition-base;
+    width: 20rem;
+    height: 10rem;
+    content: '';
+  }
+
+  &:hover {
+    &::before {
+      left: 0;
+    }
+  }
+
+  &.dark {
+    border: 1px solid $black;
+    color: $black;
+
+    &::before {
+      background-color: $black;
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &.light {
+    border: 1px solid $white;
+    color: $white;
+
+    &::before {
+      background-color: $white;
+    }
+
+    &:hover {
+      color: $black;
+    }
+  }
+}

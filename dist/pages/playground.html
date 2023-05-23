@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>CSS Playground</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <h1 class="sr-only">'not adam' development</h1>
+      <nav>
+        <ul>
+          <li class="logo">
+            <a href="../index.html"><img src="../images/logo.png" alt="" /></a>
+          </li>
+          <section class="nav-items">
+            <li><a href="../index.html">home</a></li>
+            <li><a href="../pages/about.html">about</a></li>
+            <li><a href="../pages/photography.html">photography</a></li>
+            <li><a href="../pages/contact.html">contact</a></li>
+          </section>
+          <li class="nav-button">
+            <button class="hamburgerbutton">
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="banner">
+        <section class="banner-content">
+          <h2>CSS playground</h2>
+          <h3>artwork solely created with CSS.</h3>
+          <a
+            class="btn light"
+            href="https://evaboogaard.github.io/CSSCursus/"
+            target="_blank"
+            >visit website</a
+          >
+        </section>
+      </section>
+    </header>
+    <main>
+      <section class="project-metadata container">
+        <div class="whitespace-sm"></div>
+
+        <section>
+          <p class="label">ROLE</p>
+          <p class="content">
+            FRONT-END DEVELOPER, <br />
+            VISUAL DESIGNER
+          </p>
+        </section>
+
+        <section>
+          <p class="label">CONTEXT</p>
+          <p class="content">SCHOOL PROJECT</p>
+        </section>
+
+        <section>
+          <p class="label">PERIOD</p>
+          <p class="content">2020</p>
+        </section>
+
+        <img
+          class="mockup1 playground"
+          src="../images/playground/mockup1.png"
+          alt=""
+        />
+      </section>
+
+      <section class="container intro-section">
+        <div class="whitespace-sm"></div>
+
+        <h2>INTRODUCTION</h2>
+        <p>
+          for this school assignment the intent was to learn more about CSS and get creative with it. the goal of the assignment was to pick a character or an artwork and recreate it with only div's and CSS.
+        </p>
+      </section>
+
+      <div class="whitespace-md"></div>
+
+      <section class="container process-section">
+        <div class="whitespace-sm"></div>
+
+        <h2>PROCESS</h2>
+        <p>
+          starting this project off, i didn't have that much experience in CSS
+          yet. i started making a breakdown sketch of the character i wanted to
+          recreate: 'big hero 6' baymax. all of his different body parts were put into
+          different divs and spans in my HTML document.
+        </p>
+        <p>
+          after the HTML was written, I started styling
+          the different parts. I used a lot of different shadows,
+          border-radiuses and z-index values to create the character. this
+          challenge has taught me a lot about positioning, variables and the complexity of styling.
+        </p>
+
+        <div class="whitespace-sm"></div>
+
+        <div class="process-pictures">
+          <img src="../images/playground/process1.png" alt="" />
+          <img src="../images/playground/process2.JPG" alt="" />
+        </div>
+
+        <div class="whitespace-md"></div>
+      </section>
+
+      <div class="whitespace-md"></div>
+
+      <section class="container result-section">
+        <h3>END RESULT</h3>
+        <p>
+          i created Baymax and a custom gradient-heavy background using CSS
+          only. I added in some animations to make him, the sun, moon and stars
+          move. using a JS toggle function that swaps the :root color variables you can also switch to dark mode.
+        </p>
+        <img src="../images/playground/final.gif" alt="" />
+
+        <a class="btn dark" href="https://evaboogaard.github.io/CSSCursus/" target="_blank"
+          >visit website</a
+        >
+      </section>
+
+        <div class="whitespace-sm"></div>
+      </section>
+
+      <div class="cursor-dot-outline"></div>
+      <div class="cursor-dot"></div>
+    </main>
+
+    <footer>
+      <section class="footer-links">
+        <a
+          href="https://www.linkedin.com/in/eva-boogaard-219791174/"
+          target="_blank"
+          >linkedin</a
+        >
+        <a href="https://github.com/evaboogaard" target="_blank">github</a>
+      </section>
+
+      <a class="back-to-top" href="#header">back to top</a>
+    </footer>
+
+    <script type="module" src="../scripts/main.js"></script>
+  </body>
+</html>
+<!-- 
+
+
+
+      <section>
+        <h3>End Result</h3>
+        <p>
+          I created Baymax and a custom gradient-heavy background using CSS
+          only. I added in some animations to make him, the sun, moon and stars
+          move. Using JS there is also a night mode possible.
+        </p>
+        <img src="../images/playground/final.gif" alt="" />
+
+        <a href="https://evaboogaard.github.io/CSSCursus/" target="_blank"
+          >Visit Website</a
+        >
+      </section>
+    </main>
+
+    <script src="../scripts/main.js"></script>
+  </body>
+</html> -->
