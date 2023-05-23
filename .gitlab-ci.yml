@@ -10,9 +10,10 @@ pages:
       - node_modules/
   script:
     - npm install
-    - npm run dev
-    - cp -a portfolio/scripts
+    - npm run build
+    - cp -a dist/. public/
   artifacts:
-    paths: portfolio/
+    paths:
+      - public
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
