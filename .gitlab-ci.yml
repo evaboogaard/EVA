@@ -11,7 +11,7 @@ pages:
   script:
     - npm install
     - npm run dev
-    - cp -a portfolio/
+    - cp -a portfolio/scripts
   artifacts:
     paths: portfolio/
   rules:
