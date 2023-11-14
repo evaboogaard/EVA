@@ -127,7 +127,7 @@ a:hover::after {
   background-color: rgba(255, 255, 255, 0.8);
 }
 .projects section.destaat .work-img {
-  background: url(../../images/destaat_long.png);
+  background: url(../images/destaat_long.png);
   background-position: top right;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -138,7 +138,7 @@ a:hover::after {
   color: white;
 }
 .projects section.tarantino .work-img {
-  background: url(../../images/tarantino_long.png);
+  background: url(../images/tarantino_long.png);
   background-position: top right;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -148,7 +148,7 @@ a:hover::after {
   background-color: rgba(255, 255, 255, 0.8);
 }
 .projects section.dinder .work-img {
-  background: url(../../images/dinder_long.png);
+  background: url(../images/dinder_long.png);
   background-position: top right;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -159,7 +159,7 @@ a:hover::after {
   color: white;
 }
 .projects section.playground .work-img {
-  background: url(../../images/playground_long.png);
+  background: url(../images/playground_long.png);
   background-position: top right;
   background-size: 100%;
   background-repeat: no-repeat;
