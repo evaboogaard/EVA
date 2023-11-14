@@ -1,183 +1,169 @@
 .projects {
-  position: static;
+    position: static;
 
-  h2 {
-    margin-bottom: 4rem;
-    border-bottom: 2px solid $black;
-    font-size: 2rem;
-  }
-
-  a::after {
-    display: none;
-  }
-
-  h3 {
-    font-size: 3rem;
-  }
-
-  p:last-of-type {
-    margin-top: 2em;
-    border-bottom: 2px solid;
-    padding-bottom: 0.4rem;
-    font-weight: 600;
-  }
-
-  section {
-    height: 20rem;
-
-    &.shown article {
-      transform: translateX(0);
+    h2 {
+        margin-bottom: 4rem;
+        border-bottom: 2px solid $black;
+        font-size: 2rem;
     }
 
-    article {
-      display: flex;
-      position: absolute;
-      flex-direction: column;
-      justify-content: center;
-      transform: translateX(-100vw);
-      transition: $transition-base;
-      padding: 0 1rem 0 4rem;
-      width: 80vw;
-      height: 100%;
-
-      &:hover {
-        transform: translateX(-1rem);
-      }
+    a::after {
+        display: none;
     }
-
-    .work-img {
-      width: 100%;
-      height: 20rem;
-    }
-
-    &.destaat {
-      article {
-        background-color: rgb($white, 0.8);
-      }
-
-      .work-img {
-        background: url(../../images/destaat_long.png);
-        background-position: top right;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
-    }
-
-    &.tarantino {
-      article {
-        background-color: rgb($black, 0.8);
-        color: $white;
-      }
-
-      .work-img {
-        background: url(../../images/tarantino_long.png);
-        background-position: top right;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
-    }
-
-    &.dinder {
-      article {
-        background-color: rgb($white, 0.8);
-      }
-
-      .work-img {
-        background: url(../../images/dinder_long.png);
-        background-position: top right;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
-    }
-
-    &.plogdedag {
-      article {
-        background-color: rgb($black, 0.8);
-        color: $white;
-      }
-
-      .work-img {
-        background: url(../../images/plogdedag_long.png);
-        background-position: top right;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
-    }
-
-    &.covid {
-      article {
-        background-color: rgb($white, 0.8);
-      }
-
-      .work-img {
-        background: url(../../images/covid_long.png);
-        background-position: top right;
-        background-size: 100%;
-        background-repeat: repeat;
-        background-attachment: fixed;
-      }
-    }
-
-    &.playground {
-      article {
-        background-color: rgb($black, 0.8);
-        color: $white;
-      }
-
-      .work-img {
-        background: url(../../images/playground_long.png);
-        background-position: top right;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
-    }
-  }
-
-  @media (min-width: $md) {
-    width: 100%;
 
     h3 {
-      margin-bottom: 1rem;
-      font-size: 4rem;
+        font-size: 3rem;
+    }
+
+    p:last-of-type {
+        margin-top: 2em;
+        border-bottom: 2px solid;
+        padding-bottom: 0.4rem;
+        font-weight: 600;
     }
 
     section {
-      display: flex;
-      height: 30rem;
+        height: 20rem;
 
-      article {
-        position: static;
-        width: calc(50% - 5rem);
-      }
+        &.shown article {
+            transform: translateX(0);
+        }
 
-      .work-img {
-        width: 50%;
-        height: 100%;
-      }
+        article {
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            justify-content: center;
+            transform: translateX(-100vw);
+            transition: $transition-base;
+            padding: 0 1rem 0 4rem;
+            width: 80vw;
+            height: 100%;
 
-      &.destaat,
-      &.dinder {
-        background-color: $white;
+            &:hover {
+                transform: translateX(-1rem);
+            }
+        }
 
         .work-img {
-          background-size: 50%;
+            width: 100%;
+            height: 20rem;
         }
-      }
 
-      &.tarantino,
-      &.plogdedag,
-      &.playground {
-        background-color: $black;
+        &.destaat {
+            article {
+                background-color: rgb($white, 0.8);
+            }
 
-        .work-img {
-          background-size: 50%;
+            .work-img {
+                background: url(../../images/destaat_long.png);
+                background-position: top right;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
         }
-      }
+
+        &.tarantino {
+            article {
+                background-color: rgb($black, 0.8);
+                color: $white;
+            }
+
+            .work-img {
+                background: url(../../images/tarantino_long.png);
+                background-position: top right;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+        }
+
+        &.dinder {
+            article {
+                background-color: rgb($white, 0.8);
+            }
+
+            .work-img {
+                background: url(../../images/dinder_long.png);
+                background-position: top right;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+        }
+
+        &.playground {
+            article {
+                background-color: rgb($black, 0.8);
+                color: $white;
+            }
+
+            .work-img {
+                background: url(../../images/playground_long.png);
+                background-position: top right;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+        }
+
+        &.uu {
+            article {
+                background-color: rgb($white, 0.8);
+            }
+
+            .work-img {
+                background: url(../../images/uu_long.png);
+                background-position: top right;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+        }
     }
-  }
+
+    @media (min-width: $md) {
+        width: 100%;
+
+        h3 {
+            margin-bottom: 1rem;
+            font-size: 4rem;
+        }
+
+        section {
+            display: flex;
+            height: 30rem;
+
+            article {
+                position: static;
+                width: calc(50% - 5rem);
+            }
+
+            .work-img {
+                width: 50%;
+                height: 100%;
+            }
+
+            &.destaat,
+            &.dinder,
+            &.uu {
+                background-color: $white;
+
+                .work-img {
+                    background-size: 50%;
+                }
+            }
+
+            &.tarantino,
+            &.plogdedag,
+            &.playground {
+                background-color: $black;
+
+                .work-img {
+                    background-size: 50%;
+                }
+            }
+        }
+    }
 }

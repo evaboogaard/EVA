@@ -154,33 +154,22 @@ a:hover::after {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.projects section.plogdedag article {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-}
-.projects section.plogdedag .work-img {
-  background: url(../../images/plogdedag_long.png);
-  background-position: top right;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-.projects section.covid article {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-.projects section.covid .work-img {
-  background: url(../../images/covid_long.png);
-  background-position: top right;
-  background-size: 100%;
-  background-repeat: repeat;
-  background-attachment: fixed;
-}
 .projects section.playground article {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
 .projects section.playground .work-img {
   background: url(../../images/playground_long.png);
+  background-position: top right;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.projects section.uu article {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.projects section.uu .work-img {
+  background: url(../../images/uu_long.png);
   background-position: top right;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -206,10 +195,10 @@ a:hover::after {
     width: 50%;
     height: 100%;
   }
-  .projects section.destaat, .projects section.dinder {
+  .projects section.destaat, .projects section.dinder, .projects section.uu {
     background-color: white;
   }
-  .projects section.destaat .work-img, .projects section.dinder .work-img {
+  .projects section.destaat .work-img, .projects section.dinder .work-img, .projects section.uu .work-img {
     background-size: 50%;
   }
   .projects section.tarantino, .projects section.plogdedag, .projects section.playground {
@@ -337,58 +326,6 @@ nav.active .nav-items {
     display: none;
   }
 }
-.photography {
-  margin-top: 3rem;
-  /* Create four equal columns that sits next to each other */
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-}
-.photography .dropdown-menu.hide {
-  display: none;
-}
-.photography .dropdown-menu.show {
-  display: flex;
-}
-.photography h2 {
-  margin-bottom: 4rem;
-  border-bottom: 2px solid black;
-  font-size: 2rem;
-}
-.photography img {
-  width: 100%;
-}
-.photography .row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-.photography .column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 24%;
-  padding: 0 4px;
-  max-width: 24%;
-}
-.photography .column img {
-  vertical-align: middle;
-  margin-top: 8px;
-}
-@media screen and (max-width: 800px) {
-  .photography .column {
-    -ms-flex: 48%;
-    flex: 48%;
-    max-width: 48%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .photography .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
 .intro {
   margin: 10rem 0;
 }
@@ -630,6 +567,8 @@ nav.active .hamburger span:first-of-type, nav.active .hamburger span:nth-of-type
   transition: 0.5s ease-out;
   margin: 1rem 0;
   padding: 1rem 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   overflow: hidden;
 }
@@ -665,6 +604,4 @@ nav.active .hamburger span:first-of-type, nav.active .hamburger span:nth-of-type
 }
 .btn.light:hover {
   color: black;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
