@@ -604,4 +604,9 @@ nav.active .hamburger span:first-of-type, nav.active .hamburger span:nth-of-type
 }
 .btn.light:hover {
   color: black;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
