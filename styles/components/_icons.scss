@@ -1,4 +1,22 @@
 .icons {
     display: flex;
     flex-direction: column;
+
+    a {
+        i {
+            transition: $transition-faster;
+        }
+
+        &:hover {
+            &::after {
+                display: none;
+            }
+        }
+
+        &:hover {
+            i {
+                color: lighten($black, 50%);
+            }
+        }
+    }
 }

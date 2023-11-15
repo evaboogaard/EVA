@@ -609,4 +609,13 @@ nav.active .hamburger span:first-of-type, nav.active .hamburger span:nth-of-type
 .icons {
   display: flex;
   flex-direction: column;
+}
+.icons a i {
+  transition: 0.25s ease-out;
+}
+.icons a:hover::after {
+  display: none;
+}
+.icons a:hover i {
+  color: gray;
 }/*# sourceMappingURL=style.css.map */
