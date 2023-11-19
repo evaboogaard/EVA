@@ -1,0 +1,75 @@
+.about {
+    .images {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        @media (min-width: $md) {
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 7rem;
+        }
+
+        img {
+            width: 70%;
+            transition: $transition-faster;
+
+            &:first-of-type {
+                align-self: flex-end;
+            }
+
+            &:last-of-type {
+                align-self: flex-start;
+                transform: translateY(-5rem);
+
+                @media (min-width: $md) {
+                    transform: none;
+                    transform: translateY(5rem);
+                }
+            }
+
+            @media (min-width: $md) {
+                width: 40%;
+            }
+
+            &:hover {
+                scale: 1.1;
+            }
+        }
+    }
+
+    .skills {
+        ul {
+            list-style-position: inside;
+            border: 3px $black;
+            padding: 1rem;
+            animation: border-animation 5s infinite;
+
+            &:last-of-type {
+                animation-delay: -2.5s;
+            }
+        }
+    }
+}
+
+@keyframes border-animation {
+    0% {
+        border-style: dotted dashed solid double;
+    }
+
+    25% {
+        border-style: double dotted dashed solid;
+    }
+
+    50% {
+        border-style: solid double dotted dashed;
+    }
+
+    75% {
+        border-style: dashed solid double dotted;
+    }
+
+    100% {
+        border-style: dotted dashed solid double;
+    }
+}

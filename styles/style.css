@@ -492,6 +492,90 @@ nav.active .nav-items {
   align-self: center;
 }
 
+.about .images {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .about .images {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 7rem;
+  }
+}
+.about .images img {
+  width: 70%;
+  transition: 0.25s ease-out;
+}
+.about .images img:first-of-type {
+  align-self: flex-end;
+}
+.about .images img:last-of-type {
+  align-self: flex-start;
+  transform: translateY(-5rem);
+}
+@media (min-width: 768px) {
+  .about .images img:last-of-type {
+    transform: none;
+    transform: translateY(5rem);
+  }
+}
+@media (min-width: 768px) {
+  .about .images img {
+    width: 40%;
+  }
+}
+.about .images img:hover {
+  scale: 1.1;
+}
+.about .skills ul {
+  list-style-position: inside;
+  border: 3px black;
+  padding: 1rem;
+  -webkit-animation: border-animation 5s infinite;
+          animation: border-animation 5s infinite;
+}
+.about .skills ul:last-of-type {
+  -webkit-animation-delay: -2.5s;
+          animation-delay: -2.5s;
+}
+
+@-webkit-keyframes border-animation {
+  0% {
+    border-style: dotted dashed solid double;
+  }
+  25% {
+    border-style: double dotted dashed solid;
+  }
+  50% {
+    border-style: solid double dotted dashed;
+  }
+  75% {
+    border-style: dashed solid double dotted;
+  }
+  100% {
+    border-style: dotted dashed solid double;
+  }
+}
+
+@keyframes border-animation {
+  0% {
+    border-style: dotted dashed solid double;
+  }
+  25% {
+    border-style: double dotted dashed solid;
+  }
+  50% {
+    border-style: solid double dotted dashed;
+  }
+  75% {
+    border-style: dashed solid double dotted;
+  }
+  100% {
+    border-style: dotted dashed solid double;
+  }
+}
 nav button {
   position: relative;
   z-index: 100;
